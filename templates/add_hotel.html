@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>add hotel</title>
+	</head>
+	<body>
+		<form action="/hotel/new" method="POST">
+			<input type="text" name="name" placeholder="masukkan nama hotel" value="{{request.form.name}}">
+			<input type="text" name="address" placeholder="address" value="{{request.form.address}}">
+			<input type="text" name="zipcode" placeholder="zipcode" value="{{request.form.zipcode}}">
+			<input type="text" name="city" placeholder="masukkan nama kota" value="{{request.form.city}}">
+			<input type="text" name="province" placeholder="masukkan provinsi hotel" value="{{request.form.province}}">
+			<input type="text" name="country" placeholder="masukkan negara" value="{{request.form.country}}">
+			<input type="text" name="price" placeholder="masukkan harga hotel per malam" value="{{request.form.price}}">
+			<input type="submit" value="polls">
+		</form>
+	</body>
+</html>

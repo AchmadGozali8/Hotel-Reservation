@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>update</title>
+	</head>
+	<body>
+		<form action="/hotel/update/{{harga.id}}" method="POST">
+			<input type="text" name="price" value="{{request.form.price}}">
+			<input type="submit" value="edit">
+		</form>
+	</body>
+</html>

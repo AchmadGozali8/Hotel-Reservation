@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+	</head>
+	<body>
+		<h3>All Polls</h3>
+		{%for hotel in hotel%}
+		<a href="/hotel/{{hotel.id}}"><h3>{{hotel.name}}</h3></a>
+		{%endfor%}
+		<button><a href="/hotel/deleteall">Delete all</a></button>
+	</body>
+</html>
